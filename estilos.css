@@ -200,6 +200,63 @@ body {
 .pie .redes a:hover {
     color: #d81b60;
 }
+/* =========================================
+   DISEÑO RESPONSIVO (DISPOSITIVOS MÓVILES)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Ajusta el encabezado para que los elementos se apilen hacia abajo */
+    .encabezado {
+        flex-direction: column;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .columna-logo {
+        margin-bottom: 10px;
+    }
+
+    .columna-titulo h1 {
+        font-size: 1.8rem; /* Letra un poco más pequeña */
+    }
+
+    /* Ajusta el menú para que no se desborde */
+    .columna-menu {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .columna-menu a {
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+
+    /* Reduce los espacios en blanco en el contenido principal */
+    .contenido-principal section {
+        padding: 40px 15px;
+    }
+
+    .contenido-principal h2 {
+        font-size: 2rem;
+    }
+
+    /* Ajusta las tarjetas de los productos */
+    .producto {
+        width: 100%;
+        max-width: 320px; /* Evita que sean demasiado anchas */
+        padding: 15px;
+    }
+
+    /* Ajusta el botón de WhatsApp para que no sea más ancho que la pantalla */
+    .btn-whatsapp {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
 
 .pie .derechos {
     margin-top: 15px;
