@@ -200,9 +200,7 @@ body {
 .pie .redes a:hover {
     color: #d81b60;
 }
-/* =========================================
-   DISEÑO RESPONSIVO (DISPOSITIVOS MÓVILES)
-   ========================================= */
+
 @media (max-width: 768px) {
     /* Ajusta el encabezado para que los elementos se apilen hacia abajo */
     .encabezado {
