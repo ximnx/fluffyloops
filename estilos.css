@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Pacifico&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    /*fondo color rosa*/
+    background-color: #fff5f7; 
+    color: #5a4a42; /* Marrón para el texto */
+    line-height: 1.6;
+}
+
+/* ENCABEZADO (HEADER)*/
+.encabezado {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.columna-logo .logo-img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.columna-titulo h1 {
+    font-family: 'Pacifico', cursive; /* Letra cursiva linda para el título */
+    color: #ff8fab;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.columna-titulo p {
+    color: #a88d82;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.columna-menu a {
+    text-decoration: none;
+    color: #ff8fab;
+    font-weight: 700;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.columna-menu a:hover {
+    color: #ff5c8a;
+    transform: scale(1.1);
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido-principal section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contenido-principal h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ff5c8a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contenido-principal p {
+    font-size: 1.1rem;
+    color: #6b5b54;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* CATÁLOGO DE PRODUCTOS (TIENDA)*/
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.producto {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 8px 15px rgba(255, 182, 193, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(255, 182, 193, 0.5);
+}
+
+.producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    color: #ff8fab;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    height: 60px; /* Mantiene la altura pareja */
+}
+
+.producto .precio {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff5c8a;
+    margin-bottom: 15px;
+}
+
+/* Botón de compra */
+.btn-comprar {
+    background-color: #ff8fab;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: background-color 0.3s;
+}
+.btn-comprar:hover {
+    background-color: #ff5c8a;
+}
+
+/* BOTÓN DE WHATSAPP (CONTACTO) */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #fe0077; /* Color oficial de WhatsApp */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 25px;
+    box-shadow: 0 4px 10px rgb(225, 33, 88);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #fc3d6d;
+    transform: translateY(-5px);
+}
+
+/* PIE DE PÁGINA (FOOTER)*/
+.pie {
+    background-color: #ffe4e8;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    color: #a88d82;
+}
+
+.pie .redes {
+    margin-bottom: 20px;
+}
+
+.pie .redes a {
+    text-decoration: none;
+    color: #ff5c8a;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+.pie .redes a:hover {
+    color: #d81b60;
+}
+
+.pie .derechos {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
